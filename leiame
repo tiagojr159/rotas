@@ -1,0 +1,135 @@
+O objetivo desta etapa não é somente resolver o problema proposto, nós esperamos que você encaminhe um código que acredite ser de qualidade, possível de ser rodado e evoluído. Use esse problema para nos mostrar as práticas que você utiliza no dia-a-dia para escrever um bom código.
+
+Para a sua solução você poderá usar: PHP, Javascript, Python, Ruby
+Alguns pontos que avaliamos:
+- design da solução
+- legibilidade
+- facilidade de evolução e manutenção da aplicação
+- testes automatizados / uso de boas práticas de agilidade
+- operacionalidade
+- arquitetura da aplicação 
+
+Você poderá usar bibliotecas de testes unitários ou ferramentas de build disponíveis para a linguagem que você escolher (JUnit, Maven, NUnit, Rspec, Rake, NPM, Docker, PHPUnit etc.) mas você não poderá utilizar outras bibliotecas com o propósito de resolver o problema.
+
+Encaminhe uma breve descrição do design e suposições junto com o seu código, detalhes de implementação e arquitetura, bem como as instruções detalhadas de como rodar sua aplicação.
+
+Queremos que nosso processo de seleção seja justo e as pessoas tenham as mesmas chances. Para isto, solicitamos que você não compartilhe ou publique nenhum destes problemas ou a sua solução.
+
+Submeta todos os arquivos da sua solução dentro de um arquivo zip.
+
+Como regra geral, lhe concedemos três dias, partindo do dia em que você recebe o exercício, mas pode nos enviar até o final do sábado. Caso você necessite de mais tempo, não hesite em nos solicitar.
+
+Introdução aos problemas:   
+A aplicação deve ler os dados de entrada através da entrada padrão (standard input)
+A aplicação não deve possuir interface gráfica, ela deverá ser executada somente por linha de comando
+A saída da aplicação deve escrever na saída padrão (standard output)
+O código deve executar
+Você deve prover evidências suficientes de que sua solução está completa indicando, no mínimo, que ela funciona utilizando os dados de teste que são fornecidos
+Nós lhe desejamos um bom trabalho e aguardamos ansiosamente a sua resposta! 
+
+ 
+
+Escolha APENAS UM dos três problemas abaixo:
+
+A partir de agora, a descrição dos problemas será em inglês.  
+
+
+Problem one: Trains
+
+The local commuter railroad services a number of towns in Kiwiland.  Because of monetary concerns, all of the tracks are 'one-way.'  That is, a route from Kaitaia to Invercargill does not imply the existence of a route from Invercargill to Kaitaia.  In fact, even if both of these routes do happen to exist, they are distinct and are not necessarily the same distance!
+
+The purpose of this problem is to help the railroad provide its customers with information about the routes.  In particular, you will compute the distance along a certain route, the number of different routes between two towns, and the shortest route between two towns.
+
+Input:  A directed graph where a node represents a town and an edge represents a route between two towns.  The weighting of the edge represents the distance between the two towns.  A given route will never appear more than once, and for a given route, the starting and ending town will not be the same town. For the test input, the towns are named using the first few letters of the alphabet from A to D.  A route between two towns (A to B) with a distance of 5 is represented as AB5.
+
+Output: For test input 1 through 5, if no such route exists, output 'NO SUCH ROUTE'.  Otherwise, follow the route as given; do not make any extra stops!  For example, the first problem means to start at city A, then travel directly to city B (a distance of 5), then directly to city C (a distance of 4).
+
+The distance of the route A-B-C.
+The distance of the route A-D.
+The distance of the route A-D-C.
+The distance of the route A-E-B-C-D.
+The distance of the route A-E-D.
+The number of trips starting at C and ending at C with a maximum of 3 stops.  In the sample data below, there are two such trips: C-D-C (2 stops). and C-E-B-C (3 stops).
+The number of trips starting at A and ending at C with exactly 4 stops.  In the sample data below, there are three such trips: A to C (via B,C,D); A to C (via D,C,D); and A to C (via D,E,B).
+The length of the shortest route (in terms of distance to travel) from A to C.
+The length of the shortest route (in terms of distance to travel) from B to B.
+The number of different routes from C to C with a distance of less than 30.  In the sample data, the trips are: CDC, CEBC, CEBCDC, CDCEBC, CDEBC, CEBCEBC, CEBCEBCEBC.
+Test Input:
+
+AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+
+Test Output:
+
+Output #1: 9
+
+Output #2: 5
+
+Output #3: 13
+
+Output #4: 22
+
+Output #5: NO SUCH ROUTE
+
+Output #6: 2
+
+Output #7: 3
+
+Output #8: 9
+
+Output #9: 9
+
+Output #10: 7
+
+
+
+
+
+
+
+
+
+Problema um: Trens
+
+A estrada de ferro suburbana local presta serviços de manutenção a um número de cidades em Kiwiland. Por causa de preocupações monetárias, todas as faixas são "unidirecionais". Ou seja, uma rota de Kaitaia para Invercargill não implica a existência de uma rota de Invercargill para Kaitaia. De fato, mesmo que ambas existam rotas, elas são distintas e não são necessariamente a mesma distância!
+
+O objetivo deste problema é ajudar a ferrovia a fornecer aos seus clientes informações sobre as rotas. Em particular, você calculará a distância ao longo de uma determinada rota, o número de rotas diferentes entre duas cidades e a rota mais curta entre duas cidades.
+
+Entrada: Um gráfico direcionado em que um nó representa uma cidade e uma borda representa uma rota entre duas cidades. A ponderação da borda representa a distância entre as duas cidades. Uma determinada rota nunca aparecerá mais de uma vez e, para uma determinada rota, a cidade inicial e final não será a mesma cidade. Para a entrada de teste, as cidades são nomeadas usando as primeiras letras do alfabeto de A a D. Uma rota entre duas cidades (A a B) com uma distância de 5 é representada como AB5.
+
+Saída: Para entrada de teste de 1 a 5, se não houver tal rota, envie 'NO TAIS ROTA'. Caso contrário, siga a rota como dada; não faça paradas extras! Por exemplo, o primeiro problema significa começar na cidade A, depois viajar diretamente para a cidade B (uma distância de 5) e, em seguida, diretamente para a cidade C (uma distância de 4).
+
+A distância da rota A-B-C.
+A distância da rota A-D.
+A distância da rota A-D-C.
+A distância da rota A-E-B-C-D.
+A distância da rota A-E-D.
+O número de viagens começando em C e terminando em C com um máximo de 3 paradas. Nos dados de amostra abaixo, existem duas dessas viagens: C-D-C (2 paradas). e C-E-B-C (3 paradas).
+O número de viagens começando em A e terminando em C com exatamente 4 paradas. Nos dados de amostra abaixo, existem três viagens: A a C (via B, C, D); A para C (via D, C, D); e A para C (via D, E, B).
+O comprimento da rota mais curta (em termos de distância para viajar) de A para C.
+O comprimento da rota mais curta (em termos de distância para viajar) de B para B.
+O número de rotas diferentes de C a C com uma distância inferior a 30. Nos dados da amostra, as viagens são: CDC, CEBC, CEBCDC, CDCEBC, CDEBC, CEBCEBC, CEBCEBCEBC.
+Entrada de Teste:
+
+AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+
+Saída de teste:
+
+Saída 1: 9
+
+Saída 2: 5
+
+Saída 3: 13
+
+Saída # 4: 22
+
+Saída # 5: NO TAIS ROTA
+
+Saída 6: 2
+
+Saída 7: 3
+
+Saída 8: 9
+
+Saída 9: 9
+
+Saída 10: 7
